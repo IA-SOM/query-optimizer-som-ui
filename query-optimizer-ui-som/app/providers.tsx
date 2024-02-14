@@ -3,6 +3,7 @@ import * as React from "react";
 import { NextUIProvider } from "@nextui-org/system";
 import { ThemeProvider as NextThemesProvider } from "next-themes";
 import { ThemeProviderProps } from "next-themes/dist/types";
+import { NavbarWrapper } from "@/components/navbar/navbar";
 
 import { Toaster } from "react-hot-toast";
 
@@ -19,7 +20,7 @@ export function Providers({ children, themeProps }: ProvidersProps) {
         attribute="class"
         {...themeProps}
       >
-        {children}
+        <NavbarWrapper> {children}</NavbarWrapper>
 
         <Toaster position="top-center" />
       </NextThemesProvider>

@@ -10,12 +10,9 @@ import {
 export default function App() {
   return (
     <div
-      style={{
-        display: "gridl",
-        placeItems: "center",
-      }}
+
     >
-      <Button color="primary">Button</Button>{" "}
+      <Button color="primary">Button</Button>
     </div>
   );
 }
